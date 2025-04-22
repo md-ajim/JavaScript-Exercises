@@ -1,0 +1,22 @@
+h1#hading {
+    color: #ff5722;
+    font-size: 44px;
+}
+img#img2 {
+    width: 839px;
+    margin: auto;
+}
+img#img1 {
+    width: 800px;
+}
+button {
+    padding: 8px;
+    font-size: 20px;
+    background: steelblue;
+    margin-left: -458px;
+}
+
+p#p-1 {
+    font-size: 34px;
+    color: cornflowerblue;
+}

@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> 
+    <title>
+      Calculator Version 2
+    </title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> 
+
+
+  
+
+
+     <script>
+         function calculate(x){
+    form.display.value = form.display.value + x ;
+  }
+
+  function erase(){
+    var len = form.display.value.length; 
+    form.display.value = form.display.value.slice(0,len-1);
+  }
+
+  function eraseAll(){
+    form.display.value = "";
+  }
+
+  function result(){
+    form.display.value = eval(form.display.value);
+  }
+     
+    </script> 
+
+  </head>
+
+  <body>
+
+
+
+
+    <div class="calculator">
+      <form action="" name="form">
+        <input type="text" value="" class="form-control main-bar" name="display" placeholder="0">
+        <div class="button-area">
+          <div class="line">
+            <input type="btn" name="btn" value="7" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="8" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="9" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="/" class="btn btn2" onclick="calculate(this.value)">
+          </div>
+
+          <div class="line">
+            <input type="btn" name="btn" value="4" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="5" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="6" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="*" class="btn btn2" onclick="calculate(this.value)">
+          </div>
+
+          <div class="line">
+            <input type="btn" name="btn" value="1" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="2" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="3" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="-" class="btn btn2" onclick="calculate(this.value)">
+          </div>
+
+          <div class="line">
+            <input type="btn" name="btn" value="0" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="00" class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="." class="btn btn1" onclick="calculate(this.value)">
+            <input type="btn" name="btn" value="+" class="btn btn2" onclick="calculate(this.value)">
+          </div>
+
+          <div>
+            <input type="btn" name="lastrow" value="C" class="btn btn2" onclick="eraseAll()">
+            <input type="btn" name="lastrow" value="<<" class="btn btn2" onclick="erase()">
+            <input type="btn" name="equal" value="=" class="btn btn3" onclick= "result()">
+          </div> 
+
+          
+
+        </div>
+      </form>
+    </div>
+
+
+
+  </body>
+</html>

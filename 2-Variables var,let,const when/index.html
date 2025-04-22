@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variabele</title>
+  </head>
+  <body>
+    <h1>Variabele</h1>
+    <script src="app.js"></script>
+    <script>
+      // the static method is a method which cannot be called through a class instance.
+      // class Point {
+      //   constructor(x, y) {
+      //     this.x = x;
+      //     this.y = y;
+      //   }
+
+      //   static distance(a, b) {
+      //     const dx = a.x - b.x;
+      //     const dy = a.y - b.y;
+
+      //     return Math.hypot(dx, dy);
+      //   }
+      // }
+
+      // const p1 = new Point(7, 2);
+      // const p2 = new Point(3, 8);
+
+      // console.log(Point.distance(p1, p2));
+
+      // class ClassWithStaticMethod {
+      //   static staticProperty = 'someValue';
+      //   static staticMethod() {
+      //     return 'static method has been called.';
+      //   }
+      //   static {
+      //     console.log('Class static initialization block called');
+      //   }
+      // }
+
+      // console.log(ClassWithStaticMethod.staticProperty);
+      // // output: "someValue"
+      // console.log(ClassWithStaticMethod.staticMethod());
+      // // output: "static method has been called."
+
+      // const axios = require('axios');
+      // axios.post('/user', {
+      //     firstName: 'Fred',
+      //     lastName: 'Flintstone'
+      //   })
+      //   .then(function (response) {
+      //     console.log(response);
+      //   })
+      //   .catch(function (error) {
+      //     console.log(error);
+      //   });
+
+      //
+
+      // var p1 = Promise.resolve(3);
+      // var p2 = 1337;
+      // var p3 = new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     resolve("foo");
+      //   }, 100);
+      // });
+
+      // Promise.all([p3]).then(values => {
+      //   console.log(values);
+      // });
+
+      // we are passing as argument an array of promises that are already resolved,
+      // to trigger Promise.all as soon as possible
+      var resolvedPromisesArray = [Promise.resolve(33), Promise.resolve(44)];
+
+      var p = Promise.all(resolvedPromisesArray);
+      // immediately logging the value of p
+      console.log(p);
+
+      // using setTimeout we can execute code after the stack is empty
+      setTimeout(function () {
+        console.log("the stack is now empty");
+        console.log(p);
+      });
+
+      // logs, in order:
+      // Promise { <state>: "pending" }
+      // the stack is now empty
+      // Promise { <state>: "fulfilled", <value>: Array[2] }
+
+      function resolved(result) {
+        console.log("Resolved");
+      }
+
+      function rejected(result) {
+        console.error(result);
+      }
+
+      Promise.reject(new Error("fail")).then(resolved, rejected);
+      // expected output: Error: fail
+
+      //   new Error( 'h' )
+      new Error("h");
+      // new Error(message, options)
+      // new Error(message, fileName)
+      // new Error(message, fileName, lineNumber)
+
+      // this...
+      const x = Error("I was created using a function call!");
+
+      // ...has the same functionality as this.
+      const y = new Error('I was constructed via the "new" keyword!');
+
+      console.log(x, y);
+
+      Promise.reject(new Error("failm")).then(
+        function (error) {
+          console.log(error,'1')
+        },
+        function (error) {
+          console.error(error,'2'); // Stacktrace
+        }
+      );
+
+
+      const url = 'https://jsonplaceholder.typicode.com/posts'
+const data = {
+  a: 10,
+  b: 20,
+};
+axios
+  .post(url, data, {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json;charset=UTF-8",
+    },
+  })
+  .then(({data}) => {
+    console.log(data);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

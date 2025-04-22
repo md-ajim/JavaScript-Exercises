@@ -1,0 +1,33 @@
+.calculator {
+    width: 500px;
+    margin: auto;
+}
+
+.line input {
+    padding: -279px;
+    /* margin: -43px; */
+    font-size: 10px;
+    border: 1px solid;
+}
+
+.line input {
+    padding: -279px;
+    /* margin: -43px; */
+    font-size: 10px;
+    border: 1px solid;
+    outline: none;
+    background: #a4d4d4;
+    padding: 11px;
+    outline: none;
+    border: none;
+}
+
+input.btn.btn1 {
+    outline: none;
+    border: none;
+}
+
+.form-controlmain-bar{
+
+
+}

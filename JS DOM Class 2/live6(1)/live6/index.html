@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Full Stack Web Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="header">
+        <img src="image1.jpg" class="header-image">
+        <h1 class="header-h1">My Blog</h1>
+    </div>
+
+
+    <button class="menu-btn" onclick="showSidebar()"><i class="fa fa-ellipsis-v"></i></button>
+
+    <div class="sidebar" id="sidebar">
+        <i onclick="closeSidebar()" class="fa fa-times"></i>
+
+        <a href="#">Home</a>
+        <a href="#">Pages</a>
+        <a href="#">Account</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Help</a>
+    </div>
+
+
+    <div class="body-top">
+        <div class="body-container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <div class="body-top-menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li style="border: none;"><a href="#">Help</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-9 col-lg-9 col-sm-9">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Title heading 1</h1>
+                    <h3>Title Description 1</h3>
+                </div>
+                
+                <div class="card-body">
+                    <div class="blog-image-conatiner">
+                        <img src="image3.jpg" class="blog-image">
+                    </div>
+                    <p>Some Description.... Some Description....Some Description.... Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h1>Title heading 2</h1>
+                    <h3>Title Description 2</h3>
+                </div>
+                
+                <div class="card-body">
+                    <div class="blog-image-conatiner">
+                        <img src="image1.jpg" class="blog-image">
+                    </div>
+                    <p>Some Description.... Some Description....Some Description.... Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h1>Title heading 3</h1>
+                    <h3>Title Description 3</h3>
+                </div>
+                
+                <div class="card-body">
+                    <div class="blog-image-conatiner">
+                        <img src="image4.jpg" class="blog-image">
+                    </div>
+                    <p>Some Description.... Some Description....Some Description.... Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h1>Title heading 4</h1>
+                    <h3>Title Description 4</h3>
+                </div>
+                
+                <div class="card-body">
+                    <div class="blog-image-conatiner">
+                        <img src="image1.jpg" class="blog-image">
+                    </div>
+                    <p>Some Description.... Some Description....Some Description.... Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....Some Description....</p>
+                </div>
+
+            </div>
+
+        
+        </div>
+
+        <div class="col-md-3 col-lg-3 col-sm-8">
+
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="right-side-blog-image-container">
+                    <img src="image5.jpg" class="blog-image">
+                </div>
+                <p>Some Description about me</p>
+            </div>
+
+            <div class="card">
+                <h2>Popular blogs</h2>
+                <div class="right-side-blog-image-container">
+                    <img src="image3.jpg" class="blog-image">
+                </div>
+                <div class="right-side-blog-image-container">
+                    <img src="image1.jpg" class="blog-image">
+                </div>
+                <div class="right-side-blog-image-container">
+                    <img src="image4.jpg" class="blog-image">
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Follow Me</h2>
+                <p>Descriptin for following me</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-4">
+  
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-sm-4">
+  
+                    <ul>
+                        <li><a href="#">Life</a></li>
+                        <li><a href="#">Communities</a></li>
+                        <li><a href="#">Personal Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-sm-4">
+  
+                    <ul style="border: none;">
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <h5>&copy; 2021 My Beautiful Blog </h5>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
+
+<script>
+    function showSidebar() {
+        document.getElementById("sidebar").style.display = "block";
+    }
+
+    function closeSidebar() {
+        document.getElementById("sidebar").style.display = "none";
+    }
+</script>
