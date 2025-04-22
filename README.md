@@ -99,10 +99,10 @@ This repository is part of my **personal learning journey** and also serves as a
 
 ## 📬 Contact Me
 
-- 🌐 Portfolio: [your-portfolio-link.com](https://your-portfolio-link.com)
-- 🐱 GitHub: [github.com/yourusername](https://github.com/yourusername)
-- 💼 LinkedIn: [[linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)](https://www.linkedin.com/in/md-ajim-a3a7b027a/)
-- 📧 Email: your.email@example.com
+- 🌐 Portfolio: [ajim-dev.vercel.app](https://ajim-dev.vercel.app])
+- 🐱 GitHub: [github.com/md-ajim](https://github.com/md-ajim)
+- 💼 LinkedIn: [[linkedin.com/in/md-ajim-a3a7b027a/](https://linkedin.com/in/md-ajim-a3a7b027a/)]
+- 📧 Email: mdajim2669@gmail.com
 
 ---
 
