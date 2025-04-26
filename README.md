@@ -67,20 +67,6 @@ I built this repository to:
 - Error Handling (`try`, `catch`, `finally`)
 - LocalStorage & SessionStorage
 - ES Modules
-
----
-
-### ✅ Real-world Mini Projects
-
-| Project | Description |
-|--------|-------------|
-| ✅ Calculator | Perform basic math operations |
-| ✅ Todo List | Add, complete, and delete tasks |
-| ✅ Counter App | Increment/Decrement with DOM |
-| ✅ Quiz App | Basic multiple-choice quiz |
-| ✅ Digital Clock | Live updating clock using `setInterval()` |
-| ✅ Form Validation | Validate user inputs with JS |
-
 ---
 
 ## 👨‍💻 About Me
